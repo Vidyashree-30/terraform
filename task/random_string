@@ -1,0 +1,9 @@
+resource "random_string" "simple" {
+  length  = 12
+  special = false
+}
+
+output "rand_str" {
+  value = random_string.simple.result
+}
+
